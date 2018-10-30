@@ -100,6 +100,11 @@
       "type": "belongsTo",
       "model": "Pedidos",
       "foreignKey": "IdPedido"
+    },
+    "devoluciones": {
+      "type": "hasMany",
+      "model": "Devoluciones",
+      "foreignKey": ""
     }
   },
   "acls": [],

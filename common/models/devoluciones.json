@@ -1,0 +1,26 @@
+{
+  "name": "Devoluciones",
+  "plural": "devoluciones",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "cantidad": {
+      "type": "number",
+      "required": true,
+      "default": 1
+    }
+  },
+  "validations": [],
+  "relations": {
+    "detallesPedidos": {
+      "type": "belongsTo",
+      "model": "DetallesPedidos",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
