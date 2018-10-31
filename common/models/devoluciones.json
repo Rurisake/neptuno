@@ -1,13 +1,13 @@
 {
   "name": "Devoluciones",
-  "plural": "devoluciones",
+  "plural": "Devoluciones",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "cantidad": {
+    "Cantidad": {
       "type": "number",
       "required": true,
       "default": 1
@@ -15,9 +15,14 @@
   },
   "validations": [],
   "relations": {
-    "detallesPedidos": {
+    "productos": {
       "type": "belongsTo",
-      "model": "DetallesPedidos",
+      "model": "Productos",
+      "foreignKey": ""
+    },
+    "pedidos": {
+      "type": "belongsTo",
+      "model": "Pedidos",
       "foreignKey": ""
     }
   },
